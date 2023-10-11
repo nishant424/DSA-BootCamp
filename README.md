@@ -6,3 +6,8 @@ Rohit Negi
 
 # Student
 Nishant
+
+# Day 24/180 of Coding
+
+Learnt about Time and Space Complexity.
+Feedback : Wonderful Session (All doubts cleared in one shot)
