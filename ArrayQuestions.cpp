@@ -61,22 +61,63 @@ using namespace std;
 
 //Sorting (Selection Sort)
 
+// int main()
+// {
+//     int arr[6] = {10, 4, 1, 3, 2, 7};
+
+//     for(int i=0; i<5; i++)
+//     {
+//         int index = i;
+//         for(int j=i+1; j<6; j++)
+//         {
+//             if(arr[j]<arr[index])
+//             index = j;
+//         }
+//         swap(arr[i], arr[index]);
+//     }
+//     for (int i=0; i<6; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+
+
+
+
+
+
+//Bubble Sort
+
 int main()
 {
-    int arr[6] = {10, 4, 1, 3, 2, 7};
+ int arr[1000];
+ int n;
+ cout<<"Enter the size of array: ";
+ cin>>n;
 
-    for(int i=0; i<5; i++)
+cout<<"Enter the element in array";
+ for(int i=0; i<n; i++)
+ {
+     cin>>arr[i];
+ }
+
+ for(int i=n-2; i>=0; i--)
+ {
+    bool swapped = 0;
+    for(int j=0;j<=i;j++)
     {
-        int index = i;
-        for(int j=i+1; j<6; j++)
+        if(arr[j]>arr[j+1])
         {
-            if(arr[j]<arr[index])
-            index = j;
+            swapped =1;
+            swap(arr[j], arr[j+1]);
         }
-        swap(arr[i], arr[index]);
+        if(swapped == 0)
+        break;
     }
-    for (int i=0; i<6; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
+
+ }
+    for(int i=0; i<n; i++)
+   cout<<arr[i]<<" "; 
+  
 }
